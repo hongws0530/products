@@ -9,7 +9,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @GetMapping("/product/{productId}")
+    @GetMapping("/Item/{productId}")
     Product productStockCheck(@PathVariable(value = "productId") Long productId) {
 
         System.out.println("productStockCheck call");
